@@ -1,10 +1,13 @@
 header{
     @extend .flexItemCentrado;
     width: 100%;
+    height: 70px;
     background-color: $claro;
     justify-content: space-between;
-    height: auto;
     padding: 0.5% 10%;
+    box-shadow: 5px 0px 20px 0px;
+    position: fixed;
+    z-index: 1;
 
     h1{
         font-family: $marca;
@@ -15,14 +18,36 @@ header{
         font-weight: $negrita;
         white-space: nowrap;
     }
-}
 
-.headerLogo{
-    @extend .flexItemCentrado;
-    justify-content: flex-start;
-    width: 100%;
+    .headerLogo{
+        @extend .flexItemCentrado;
+        justify-content: flex-start;
+        width: 100%;
+    
+        div{
+            margin-right: 10px;
+        }
+    }
 
-    div{
-        margin-right: 10px;
+    .nav-menu{
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+
+        .boton-nav{
+            margin-left: 25px;
+            padding: 5px 10px;
+            background-color: transparent;
+            border: 1px solid transparent;
+            font-size: 14px;
+            font-family: $fuente;
+            font-weight: $negrita;
+        
+            &:hover{
+                background-color: $negro;
+                color: $blanco;
+                border-radius: 5px;
+            }
+        }
     }
 }

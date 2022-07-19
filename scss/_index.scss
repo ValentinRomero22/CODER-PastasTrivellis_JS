@@ -1,0 +1,53 @@
+.contenedor-carrusel{
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+    position: relative;
+
+    .carrusel{
+        margin-left: -100%;
+        width: 400%;
+        height: 100%;
+        display: flex;
+
+        .carrusel-imagen{
+            width: 100%;
+
+            img{
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .contenedor-boton-carrusel{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        font-size: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $claro;
+        color: $contraste;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        border-radius: 50%;
+
+        &:hover{
+            color: $blanco;
+            background-color: $oscuro;
+        }
+    }
+
+    .carrusel-boton-derecho{
+        right: 1%;
+    }
+
+    .carrusel-boton-izquierdo{
+        left: 1%;
+    }
+}

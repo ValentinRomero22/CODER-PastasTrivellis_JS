@@ -1,0 +1,57 @@
+.caja-boton-input{
+    margin: 5% 0% 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .caja-direccion{
+        width: 55%;
+        padding: 0px 20px;
+    
+        .direccion{
+            width: 100%;
+            border: solid transparent;
+            border-bottom: 1px solid $gris;
+            font-size: 16px;
+        }
+    }
+
+    .boton-confirmar{
+        padding: 10px 15px;
+        min-width: 180px;
+        font-size: 14px;
+        border: 1px solid $claro;
+        border-radius: 10px;
+        background-color: transparent;
+    
+        &:hover{
+            border-color: $ok;
+            background-color: $ok;
+            color: $blanco;
+        }
+    }
+
+    .boton-limpiar{
+        padding: 10px 15px;
+        min-width: 180px;
+        font-size: 14px;
+        border: 1px solid $claro;
+        border-radius: 10px;
+        background-color: transparent;
+    
+        &:hover{
+            border-color: $limpiar;
+            background-color: $limpiar;
+            color: $negro;
+        }
+    }
+}
+
+.cantidad-tabla{
+    width: 20%;
+    border: 1px solid transparent;
+    border-bottom: 1px solid $gris
+}
+
+
+

@@ -1,0 +1,135 @@
+.caja-cargador{
+    display: flex;
+    justify-content: center;
+}
+
+.cargador {
+    width: 70px;
+    height: 70px;
+    border: 10px solid $blanco;
+    border-top: 10px solid $claro;
+    border-radius: 50%;
+    animation-name: girar;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.caja-pedidos{
+    padding: 1% 2%;
+    border: 1px solid $limpiar;
+    border-radius: 10px;
+    box-shadow: 10px 10px 45px -25px;
+}
+
+.contenedor-pedido{
+    padding: .5% 0%;
+    justify-content: center;
+    margin: 1% 0%;
+    border-radius: 10px;
+    box-shadow: 0px 15px 30px -25px;
+    background-color: $claro;
+}
+
+.contenedor-titulo{
+    margin-bottom: 10px;
+    padding: 1% .5%;
+    color: $contraste;
+}
+
+.contenedor-info{
+    width: 100%;
+    border: 1px solid $borde-claro;
+    border-radius: 10px;
+    box-shadow: 0px 15px 30px -25px;
+    background-color: $blanco;
+}
+
+.caja-pedidos .contenedor-detalle{
+    height: 0;
+    padding: 0em;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.contenedor-detalle.caja-visible{
+    height: 20%;
+    margin: 1% 0%;
+}
+
+.tabla{
+    width: 100%;
+    text-align: center;
+    /* border: 1px solid $borde-claro; */
+    border-radius: 5px;
+
+    th{
+        color: $contraste;
+    }
+
+    td{
+        padding: 15px 0px;
+    }
+}
+
+.tabla-titulo{
+    border: 0px;
+}
+
+.tabla-width-55{
+    width: 55%;
+}
+
+.tabla-width-40{
+    width: 40%;
+}
+
+.tabla-width-20{
+    width: 20%;
+}
+
+.tabla-width-15{
+    width: 15%;
+}
+
+.tabla-width-5{
+    width: 5%;
+}
+
+.borde-tr{
+    border-bottom: 1px solid $claro;
+}
+
+.boton-tabla{
+    min-width: 80%;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid transparent;
+    background-color: transparent;
+
+    &:hover{
+        border-color: $negro;
+        background-color: $negro;
+        border-radius: 5px;
+        color: $blanco;
+    }
+}
+
+.cabecera-oculta{
+    color: $contraste;
+}
+
+.fila-oculta{
+    background-color: aqua;
+    height: 0;
+    overflow: hidden;
+}

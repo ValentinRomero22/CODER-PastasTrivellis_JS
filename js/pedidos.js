@@ -127,5 +127,5 @@ function ocultarCargador(){
 
 function mostrarCargador(){
     cajaCargador.innerHTML = "<div class='cargador'></div>"
-    subtituloPedidos.innerHTML = "Cargando pedidos..."
+    /* subtituloPedidos.innerHTML = "Cargando pedidos..." */
 }

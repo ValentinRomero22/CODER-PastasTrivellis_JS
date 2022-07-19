@@ -2,12 +2,14 @@ mostrarCarrito()
 
 function mostrarCarrito(){
     if(localStorage.getItem("items") != null){
+        subtitulo.innerHTML = "Ingrese los datos requeridos para confirmar su compra"
         cajaItems.innerHTML = ""
         cajaItems.classList.add("caja-pedidos")
         let contenedorTitulo = document.createElement("div")
         contenedorTitulo.classList.add("contenedor-titulo")
         let tablaTitulo = document.createElement("table")
         tablaTitulo.classList.add("tabla")
+        tablaTitulo.classList.add("tabla-titulo")
         let contenedorItem = document.createElement("div")
         contenedorItem.classList.add("contenedor-info")
         let tablaItem = document.createElement("table")
@@ -21,7 +23,7 @@ function mostrarCarrito(){
             botonLimpiar.removeAttribute("hidden")
 
             tablaTitulo.innerHTML = ""
-            tablaTitulo.innerHTML += "<tr>" +
+            tablaTitulo.innerHTML += "<tr class='titulo-tabla'>" +
                                         "<th class='tabla-width-40'>PRODUCTO</th>" + 
                                         "<th class='tabla-width-20'>CANTIDAD</th>" + 
                                         "<th class='tabla-width-20'>IMPORTE</th>" + 
@@ -157,7 +159,7 @@ botonLimpiar.onclick = () =>{
 }
 
 function carritoVacio(){
-    subtitulo.innerHTML = "No tienes productos cargados al carrito."
+    subtitulo.innerHTML = "No tienes productos cargados al carrito"
     botonAgregarPedido.setAttribute("hidden", "")
     inputDireccion.setAttribute("hidden", "")
     botonLimpiar.setAttribute("hidden", "")

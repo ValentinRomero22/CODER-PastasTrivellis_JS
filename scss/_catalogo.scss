@@ -1,0 +1,92 @@
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 2%; 
+    margin: 2% 0%;
+
+    .producto{
+        width: 100%;
+        position: relative;
+        padding-bottom: 5%;
+        border: 1px solid $limpiar;
+        border-radius: 10px;
+
+        &:hover{
+            border-color: $negro;
+            box-shadow: 0px 0px 20px 0px;
+        }
+
+        .imagen-producto{
+            width: 100%;
+            height: 55%;    
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+        .info-producto{
+            height: 45%;
+            padding: 0% 3%;
+        
+            /* &:hover .comprar{
+                opacity: 1;
+            } */
+
+            .nombre-producto{
+                height: 35%;
+            }
+            
+            .precio-producto{
+                height: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .detalle{
+                    color: $contraste;
+                }
+            }
+            
+            .comprar-producto{
+                height: 25%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                input{
+                    width: 100%;
+                    border: 1px solid $gris;
+                    border-radius: 5px;
+                    padding: .5em 3em;
+                    background-color: $blanco;
+                    font-size: 1em;
+
+                    &:hover{
+                        color: $blanco;
+                        background-color: $oscuro;
+                        border-color: $oscuro;
+                    }
+                }
+            }
+
+            /* .comprar{
+                opacity: 0;
+                transition: opacity 0.5s ease-in-out;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 35%;
+                width: 100%;
+                background: $claro;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border: 1px solid transparent;
+                color: $negro;
+                font-size: 24px;
+                font-weight: $negrita;
+                font-family: $fuente;
+            } */
+        }
+    }    
+}
