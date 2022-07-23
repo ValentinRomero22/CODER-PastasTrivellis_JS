@@ -35,6 +35,7 @@ function mostrarCarrito(){
             _items = JSON.parse(localStorage.getItem("items"))
             for(let i = 0; i < _items.length; i++){
                 item = _items[i]
+                console.log(item.productos)
                 tablaItem.innerHTML += "<tr class='borde-tr'>" + 
                                             "<td class='tabla-width-40'>" + item.producto.descripcion + "</td>" + 
                                             "<td class='tabla-width-20'><input id= " + i + " class='cantidad-tabla' type='number' onblur='calcularImporte(" + i + ")' min='1' max='9999'>" +

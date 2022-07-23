@@ -19,7 +19,7 @@ let banderaCantidad
 let cantidadTabla
 let contadorPedido
 
-
+const recomendados = document.getElementById("recomendados")
 const catalogo = document.getElementById("catalogo")
 const tablaCarrito = document.getElementById("tablaCarrito")
 const cajaPedidos = document.getElementById("caja-pedidos")

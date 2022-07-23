@@ -17,7 +17,6 @@ function listarProductos(datos){
         catalogo.innerHTML +=   "<article class='producto'>" +
                                     "<img class='imagen-producto' src='../" + imagen + "'alt='Imagen'></img>" +
                                     "<div class='info-producto'>" + 
-                                        /* "<input type='submit' id='comprar' onclick='agregarItem(" + id + ")' class='comprar' value='Agregar al carrito'>" + */
                                         "<div class='nombre-producto'>" +
                                             "<h3>" + descripcion + "</h3>" +
                                         "</div>" + 
@@ -27,7 +26,6 @@ function listarProductos(datos){
                                         "</div>" +
                                         "<div class='comprar-producto'>" + 
                                             "<input value='Agregar al carrito' type='submit' id='comprar' onclick='agregarItem(" + id + ")'>" +
-                                            /* "<p>" + detalle +" </p>" + */ 
                                         "</div>" +
                                     "</div>" +
                                 "</article>"                            

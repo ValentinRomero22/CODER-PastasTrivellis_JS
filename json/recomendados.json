@@ -1,0 +1,34 @@
+[
+    {
+        "id": 5, 
+        "descripcion": "Tallarines de verdura",
+        "detalle": "Cocción: suben y 1 minuto de hervor",
+        "precio": 210,
+        "imagen": "imagenes/tallarines_verdura.png",
+        "categoria": "pastas"
+    },
+    {
+        "id": 12, 
+        "descripcion": "Tiramisú light" ,
+        "detalle": "Aproximadamente 1.5kg",
+        "precio": 350,
+        "imagen": "imagenes/tiramisu_light.png",
+        "categoria": "postres"
+    },
+    {
+        "id": 4, 
+        "descripcion": "Ravioles integrales",
+        "detalle": "Cocción: suben y 2 minutos de hervor",
+        "precio": 280,
+        "imagen": "imagenes/ravioles.png",
+        "categoria": "pastas"
+    },
+    {
+        "id": 8, 
+        "descripcion": "Tallarines al huevo",
+        "detalle": "Cocción: suben y 1 minutos de hervor",
+        "precio": 175 ,
+        "imagen": "imagenes/tallarines.png",
+        "categoria": "pastas"
+    }
+]
